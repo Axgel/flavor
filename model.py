@@ -1,9 +1,9 @@
 import re
 
 import requests
-import config
+# import config
 
-API_KEY_SPOON = config.API_KEY_SPOON
+# API_KEY_SPOON = config.API_KEY_SPOON
 
 
 def stringSplit(ingredients):
