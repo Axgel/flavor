@@ -108,10 +108,3 @@ def parseString(summary):
     modified_string = re.sub('<[^>]+>', '', summary)
     return modified_string
 
-"""
-- Get long and lat using the geocode api
-- Using zomato, generate a list of diff nearby resturants
-    - Display address of resturant, 
-- Using google api create a map and pin point the locations on the map, centered around the long and lat of the geocode api
-
-"""
