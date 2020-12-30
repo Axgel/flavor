@@ -3,12 +3,15 @@ from model import stringSplit, getRecipeData2
 # import config
 import requests
 from datetime import datetime, timezone
+import os
+
 
 app = Flask(__name__)
 app.jinja_env.globals['current_time'] = datetime.now()
 
+API_KEY_SPOON = os.getenv("API_KEY_SPOON")
 # API_KEY_SPOON = config.API_KEY_SPOON
-# app.secret_key = API_KEY_SPOON
+app.secret_key = API_KEY_SPOON
 
 @app.route('/')
 def homePage():
