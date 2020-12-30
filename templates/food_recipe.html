@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}kitchen{% endblock title%}
+
+{% block content %}
+<div class="foodRecipe">
+        <h1 style="max-width: none">{{recID}}</h1>
+
+        <img src={{recipe_data[recID]["image"]}}>
+        <h4>Ingrediets:</h4>
+        {% for ingredient in range(recipe_data[recID]["ingredients"]|length) %}
+            <ul>
+                <li>{{recipe_data[recID]["ingredients"][ingredient]}}</li>
+            </ul>
+        {% endfor %}
+        <h4>Instructions:</h4>
+        {% for instruction in range(recipe_data[recID]["instructions"]|length) %}
+            <p>{{instruction+1}}. {{recipe_data[recID]["instructions"][instruction]}}</p>
+        {% endfor %}
+</div>
+{% endblock content%}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1>recipe page</h1>
+    <p>Start creating your recipes below!</p>
+    <form action="/recipe" method="post">
+        <label for="ingredients">Enter ingredients: </label>
+        <input type="text" id="ingredients" name="ingredients">
+
+        <label for="numOfRecipes">Number of Recipes</label>
+        <input type="number" id="numOfRecipes" name="numOfRecipes">
+
+        <button type="submit"> Submit </button>
+    </form>
+{% endblock %}

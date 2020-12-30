@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="homePage">
+        <div>
+            <img class="homeImg" src="/static/images/food1.png" alt="">
+        </div>
+        <p>WELCOME TO</p>
+        <p>FLAVOR</p>
+    </div>
+
+    <div class="homePageText">
+        <p>Use your current ingredients to find</p>
+        <p>new and delicious recipes to make!</p>
+    </div>
+
+    <div class="body1">
+        <form autocomplete="off" class="searchBoxLocate" action="/recipe" method="POST">
+            <div style="padding-left: 100px"><br></div>
+            <div>
+                <label for="myInput"></label>
+                <input class="input1" id="myInput"  type="text" name="recipes" placeholder="Search for your ingredients">
+                <button style="top:200px" class="submitBut" type="submit">Find Recipes</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

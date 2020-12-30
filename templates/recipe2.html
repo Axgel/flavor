@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="findRecipe">Find new recipes ({{ recipe_data | length}})</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% for item in recipe_data %}
+        <div class="container">
+            <div class="card mb-3 d-flex justify-content-center" style="max-width: 1000px; text-align: center;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{recipe_data[item]["image"]}}" alt="..." style="width: 330px; height: 330px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="/recipe/{{ item }}" class="card-title">{{ item }}</a>
+                            <p class="card-text">{{ recipe_data[item]["summary"] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,150 @@
+.navBars{
+    background-color: #A31818;
+    font-family: "righteous",monospace;
+    color: white;
+    padding-left: 20px;
+    font-size: 50px;
+    position: relative;
+}
+
+body{
+    background-color: #AD1B1B;
+}
+.homePage{
+    font-family: monospace;
+    font-size: 10rem;
+    padding-left: 100px;
+    padding-top: 100px;
+    color: white;
+    line-height: 1;
+    position: relative;
+}
+
+.homeImg{
+    float: right;
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+
+.homePageText{
+    color: white;
+    padding-left:100px;
+    line-height: 1;
+    font-family: monospace;
+    font-size: 30px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.searchBoxLocate{
+    padding-left: 100px;
+    position: relative;
+}
+.searchBox{
+    width: 650px;
+    position: relative;
+}
+
+input[type=text] {
+    width: 275px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("/static/images/search.png");
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+    position: relative;
+}
+
+.submitBut{
+    background-color: #FF922E;
+    color: black;
+    border-radius: 8px;
+    top: 250px;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 5px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.body1 {
+    font: 16px Arial;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.input1 {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input1[type=text] {
+    background-color: #f1f1f1;
+    width: 40%;
+}
+
+.input1[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    /*position the autocomplete items to be the same width as the container:*/
+    left: 120px;
+    width: 30%;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+.findRecipe{
+    color:white;
+    font-size: 50px;
+    font-family: monospace;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.foodRecipe{
+    color: white;
+    padding-left: 30px;
+    max-width: 800px;
+    font-family: monospace;
+    font-size: 15px;
+}
