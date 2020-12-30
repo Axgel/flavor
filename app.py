@@ -36,22 +36,6 @@ def recipe():
         return render_template("recipe2.html", recipe_data=recipe_data)
 
 
-"""
-@app.route('/dineOut', methods=["GET", "POST"])
-def dineOut():
-    if request.method == 'GET':
-        return render_template('dineout.html')
-    else:
-        address = request.form["address"]
-        geocode_link = f"https://api.geocod.io/v1.6/geocode?api_key={API_KEY_GEO}&q={address}"
-        geocode_requests = requests.get(geocode_link).json()
-        print(geocode_requests)
-
-
-        return render_template('dineout.html')
-
-"""
-
 
 @app.route('/recipe/<string:recipeID>', methods=["GET", "POST"])
 def recipeInfo(recipeID):
