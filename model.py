@@ -97,14 +97,6 @@ def getRecipeData2(recipe_link, numOfRecipes):
     return recipe_data
 
 
-def getCoords(geocode_link):
-    geocode_requests = requests.get(geocode_link).json()
-    coords = dict()
-    coords["address"] = geocode_requests["results"][0]["formatted_address"]
-    coords["lat"] = geocode_requests["results"][0]["location"]["lat"]
-    coords["long"] = geocode_requests["results"][0]["location"]["lng"]
-    return coords
-
 def parseString(summary):
     modified_string = re.sub('<[^>]+>', '', summary)
     return modified_string
