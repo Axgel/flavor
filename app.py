@@ -24,7 +24,7 @@ recipe_data = dict()
 @app.route('/recipe', methods=["GET", "POST"])
 def recipe():
     ingredients = request.form["recipes"]
-    numOfRecipes = 5
+    numOfRecipes = 20
     ingredList = stringSplit(ingredients)
     recipe_link = f"https://api.spoonacular.com/recipes/findByIngredients?apiKey={API_KEY_SPOON}&ingredients={ingredList}&number={numOfRecipes}"
     global recipe_data
