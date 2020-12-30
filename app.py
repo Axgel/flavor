@@ -1,14 +1,14 @@
 from flask import Flask, render_template, request, session, url_for, redirect
 from model import stringSplit, getRecipeData2
-import config
+# import config
 import requests
 from datetime import datetime, timezone
 
 app = Flask(__name__)
 app.jinja_env.globals['current_time'] = datetime.now()
 
-API_KEY_SPOON = config.API_KEY_SPOON
-app.secret_key = API_KEY_SPOON
+# API_KEY_SPOON = config.API_KEY_SPOON
+# app.secret_key = API_KEY_SPOON
 
 @app.route('/')
 def homePage():
