@@ -1,10 +1,16 @@
+html,body {
+    overflow: auto;
+}
+
+.container, .contents {
+    height: 800px;
+}
 .navBars{
     background-color: #A31818;
     font-family: "righteous",monospace;
     color: white;
     padding-left: 20px;
     font-size: 50px;
-    position: relative;
 }
 
 body{
@@ -12,19 +18,17 @@ body{
 }
 .homePage{
     font-family: monospace;
-    font-size: 10rem;
+    font-size: 8vw;
     padding-left: 100px;
     padding-top: 100px;
     color: white;
     line-height: 1;
-    position: relative;
 }
 
 .homeImg{
     float: right;
     width: 40%;
     height: auto;
-    position: relative;
 }
 
 .homePageText{
@@ -32,18 +36,15 @@ body{
     padding-left:100px;
     line-height: 1;
     font-family: monospace;
-    font-size: 30px;
+    font-size: 2vw;
     padding-top: 50px;
-    position: relative;
 }
 
 .searchBoxLocate{
     padding-left: 100px;
-    position: relative;
 }
 .searchBox{
     width: 650px;
-    position: relative;
 }
 
 input[type=text] {
@@ -59,7 +60,6 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
     transition: width 0.4s ease-in-out;
     outline: none;
-    position: relative;
 }
 
 .submitBut{
@@ -83,7 +83,6 @@ input[type=text] {
 
 /*the container must be positioned relative:*/
 .autocomplete {
-    position: relative;
     display: inline-block;
 }
 
@@ -147,4 +146,19 @@ input[type=text] {
     max-width: 800px;
     font-family: monospace;
     font-size: 15px;
+}
+
+a:hover {
+    color: maroon;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #AD1B1B;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
 }
