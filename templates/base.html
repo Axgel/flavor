@@ -8,17 +8,21 @@
     <link rel="">
     <title>Flavor</title>
 </head>
-<body>
-    <nav class="navbar navbar-light navBars">
-        <a class="navbar-brand" style="color: white; font-size: 50px" href="/">
-            flavor
-        </a>
-    </nav>
+    <body>
+        <nav class="navbar navbar-light navBars">
+            <a href="/" class="">
+                <span class="ai-element__label" style="color:white; font-size: 50px">flavor</span>
+            </a>
+            {% block navbar %} {% endblock %}
+        </nav>
 
-    {% block content %}
+        {% block content %}
 
-    {% endblock %}
-    <script src="/static/js/autocomplete.js"></script>
-</body>
+        {% endblock %}
 
+        <div class="footer">
+            <p>© 2020 Design and content by  <a style="color:white" href="mailto:liangel421@gmail.com">Angel Li</a>.<br></p>
+        </div>
+        <script src="/static/js/autocomplete.js"></script>
+    </body>
 </html>
