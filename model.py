@@ -1,10 +1,11 @@
 import re
 
 import requests
+import os
 # import config
 
 # API_KEY_SPOON = config.API_KEY_SPOON
-
+API_KEY_SPOON = os.getenv("API_KEY_SPOON")
 
 def stringSplit(ingredients):
     # Input ingredients, formats them properly
